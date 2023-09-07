@@ -1,0 +1,34 @@
+/* styles.css */
+
+/* Apply styles to the entire page */
+body {
+  background-color: #f2f2f2; /* Light gray background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff; /* White background for the table */
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.data-table th, .data-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style the table header row */
+.data-table thead {
+  background-color: #333; /* Dark gray background for the header row */
+  color: #fff; /* White text for header cells */
+}
+
+/* Style alternating rows for better readability */
+.data-table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Light gray background for odd rows */
+}

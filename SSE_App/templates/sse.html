@@ -1,0 +1,16 @@
+<!-- SSE template (sse.html) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSE Example</title>
+</head>
+<body>
+    <h1>Real-Time Data</h1>
+    <ul>
+        {% for data in datas %}
+           <li>{{ data.temperature }} - {{ data.humidity }} - {{data.current}} - {{data.timestamp}}</li>
+        {% endfor %}
+    
+    </ul>
+</body>
+</html>

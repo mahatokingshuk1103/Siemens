@@ -1,0 +1,24 @@
+<!-- item_list.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}" />
+    <meta http-equiv="refresh" content="10"> <!-- Refresh every 30 seconds -->
+    <title>Auto Refresh Example</title>   
+</head>
+<body>
+    <h1>TEMPERATURE AND HUMIDITY MEASURED IN IOT DEVICE</h1>
+    <ul>
+        {% for item in data %}
+            <li>
+                <h2>{{ item.device_id }}</h2>
+                <p>Time and date:{{ item.timestamp }}</p>
+                <p>Temperature {{ item.temperature }}</p>
+                <p>Humidity: {{ item.humidity }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

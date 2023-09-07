@@ -1,0 +1,38 @@
+/* weather_app/static/css/weather.css */
+
+
+.center-text {
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("weather.jpg");
+    width: 100%;
+    height: 100%;
+
+  }
+  
+  /* Optional: Add some styling to headings or paragraphs */
+  h1 {
+    color: #333;
+  }
+  
+  h2 {
+    color: #666;
+  }
+  
+  p {
+    color: #999;
+  }
+  

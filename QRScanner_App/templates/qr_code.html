@@ -1,0 +1,10 @@
+<!-- qrcode_app/templates/qr_code.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code</title>
+</head>
+<body>
+    <img src="{% url 'generate_qrcode' entry.id %}">
+</body>
+</html>

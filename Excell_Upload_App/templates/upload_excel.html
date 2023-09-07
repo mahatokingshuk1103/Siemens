@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Excel Data</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style1.css'%}" />
+</head>
+<body>
+    <h1>Upload Excel Data</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+    <a href="{% url 'display_data' %}">View Uploaded Data</a>
+</body>
+</html>
